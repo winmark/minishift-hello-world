@@ -22,19 +22,33 @@ div {
   position: relative;
 }
 
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #rect {
   animation-name: rainbow;
-  animation-duration: 4s;
+  animation-duration: 15s;
 }
 
 @keyframes rainbow {
   0% {
-    background-color: blue;
+    background-color: #007bff;
     top: 0px;
     left: 0px;
   }
+  25% {
+     background-color: #ff0000;
+    top: 50px;
+    left: 25px;
+  }
   50% {
-    background-color: green;
+    background-color: #b8ffb5;
     top: 50px;
     left: 25px;
   }
