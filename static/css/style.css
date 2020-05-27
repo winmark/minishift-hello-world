@@ -19,17 +19,15 @@ p {
 
 div {
   height: 40px;
-  width: 70%;
-  background: black;
+  width: 40%;
+  background: #2d2d2d;
   margin: 50px auto;
   border-radius: 5px;
   position: relative;
 }
 
 #rect {
-  animation-name: rainbow;
-  animation-duration: 20s;
-}
+  animation: rainbow 20s infinite;
 
 @keyframes rainbow {
   0% {
