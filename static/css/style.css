@@ -31,6 +31,19 @@ div {
   justify-content: center;
 }
 
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
 #rect {
   animation-name: rainbow;
   animation-duration: 15s;
@@ -44,8 +57,8 @@ div {
   }
   25% {
      background-color: #ff0000;
-    top: 50px;
-    left: 25px;
+    top: -50px;
+    left: -25px;
   }
   50% {
     background-color: #b8ffb5;
