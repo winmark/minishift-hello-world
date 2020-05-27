@@ -1,49 +1,53 @@
-/* Google Fonts */
-@import url(https://fonts.googleapis.com/css?family=Anonymous + Pro);
-
-/* Global */
-html {
-  min-height: 100%;
-  overflow: hidden;
-}
 body {
-  height: calc(100vh - 8em);
-  padding: 4em;
-  color: rgba(255, 255, 255, 0.75);
-  font-family: "Anonymous Pro", monospace;
-  background-color: rgb(25, 25, 25);
-}
-.line-1 {
-  position: relative;
-  top: 50%;
-  width: 24em;
-  margin: 0 auto;
-  border-right: 2px solid rgba(255, 255, 255, 0.75);
-  font-size: 180%;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  transform: translateY(-50%);
+  background-color: #2d2d2d;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Animation */
-.anim-typewriter {
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-    blinkTextCursor 500ms steps(44) infinite normal;
+h1 {
+  color: #c26356;
+  font-size: 30px;
+  font-family: Menlo, Monaco, fixed-width;
 }
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 24em;
-  }
+
+p {
+  color: white;
+  font-family: "Source Code Pro", Menlo, Monaco, fixed-width;
 }
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: rgba(255, 255, 255, 0.75);
+
+div {
+  height: 40px;
+  width: 40%;
+  background: #2d2d2d;
+  margin: 50px auto;
+  border-radius: 5px;
+  position: relative;
+}
+
+#rect {
+  animation: rainbow 20s infinite;
+
+@keyframes rainbow {
+  0% {
+    background-color: #007bff;
+    top: 0px;
+    left: 0px;
   }
-  to {
-    border-right-color: transparent;
+  25% {
+    background-color: #ff0000;
+    top: 0px;
+    left: 25px;
+  }
+  50% {
+    background-color: #b8ffb5;
+    top: 50px;
+    left: 25px;
+  }
+  100% {
+    background-color: yellow;
+    top: 0px;
+    left: -25px;
   }
 }
