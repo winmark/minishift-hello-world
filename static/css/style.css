@@ -56,9 +56,9 @@ div {
     left: 0px;
   }
   25% {
-     background-color: #ff0000;
-    top: -50px;
-    left: -25px;
+    background-color: #ff0000;
+    top: 0px;
+    left: 25px;
   }
   50% {
     background-color: #b8ffb5;
