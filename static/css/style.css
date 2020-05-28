@@ -1,53 +1,48 @@
+html,
 body {
-  background-color: #2d2d2d;
-  list-style: none;
+  height: 100%;
+  margin: 0;
+}
+
+.my-container {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: 3px solid tomato;
+  background-color: #282828;
 }
 
 h1 {
-  color: #c26356;
+  color: tomato;
   font-size: 30px;
   font-family: Menlo, Monaco, fixed-width;
 }
 
-p {
-  color: white;
-  font-family: "Source Code Pro", Menlo, Monaco, fixed-width;
+.typewriter h1 {
+  overflow: hidden;
+  border-right: 0.15em solid tomato;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: scrivi 3.5s steps(40, end), blinking 0.75s step-end infinite;
 }
 
-div {
-  height: 40px;
-  width: 40%;
-  background: #2d2d2d;
-  margin: 50px auto;
-  border-radius: 5px;
-  position: relative;
-}
-
-#rect {
-  animation: rainbow 20s infinite;
-
-@keyframes rainbow {
-  0% {
-    background-color: #007bff;
-    top: 0px;
-    left: 0px;
+@keyframes scrivi {
+  from {
+    width: 0;
   }
-  25% {
-    background-color: #ff0000;
-    top: 0px;
-    left: 25px;
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinking {
+  from,
+  to {
+    border-color: transparent;
   }
   50% {
-    background-color: #b8ffb5;
-    top: 50px;
-    left: 25px;
-  }
-  100% {
-    background-color: yellow;
-    top: 0px;
-    left: -25px;
+    border-color: tomato;
   }
 }
